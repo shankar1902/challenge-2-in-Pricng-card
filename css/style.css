@@ -1,0 +1,104 @@
+
+#content
+{
+	width:100%;
+	background-color:white;
+}
+
+
+* {
+	box-sizing: border-box;
+  }
+  
+  .zoom {
+	transition: transform .2s; /* Animation */
+	width: 100%;
+	margin: 0 auto;
+  }
+  
+  .zoom:hover {
+	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .columns {
+	float: left;
+	width: 100%;
+	padding: 50px;
+  }
+  
+  .price {
+	list-style-type: none;
+	border: 1px solid #eee;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	width: 200px;
+  }
+  
+  .price:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+	background-color: rgb(126, 124, 124);
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+  }
+  
+  .price li {
+	border-bottom: 1px solid #eee;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .price .grey {
+	background-color: #eee;
+	font-size: 20px;
+  }
+  
+  .button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color:rgb(54, 152, 209);
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  .button:hover {
+	background-color: #555;
+  }
+  
+  @media only screen and (max-width: 600px) {
+	.columns {
+	  width: 100%;
+	}
+  }
+  
+  
+.heading
+{
+	/* width:50%; */
+	font-size: 24px;
+	font-weight: normal;
+	margin-top: 10px;
+	float:left;
+}
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+.main-content {
+	position: relative;
+}
+
+
